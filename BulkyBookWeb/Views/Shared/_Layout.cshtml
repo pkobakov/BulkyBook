@@ -24,7 +24,8 @@
                             <a class="nav-link dropdown-toggle" data-bs-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">Content Managment</a>
                             <div class="dropdown-menu">
                                 <a class="nav-link" asp-area="Admin" asp-controller="Category" asp-action="Index">Gategory</a>
-                                <a class="nav-link" asp-area="Admin" asp-controller="CoverType" asp-action="Index">Cover Types</a>
+                                <a class="nav-link" asp-area="Admin" asp-controller="CoverType" asp-action="Index">Cover Type</a>
+                                <a class="nav-link" asp-area="Admin" asp-controller="Product" asp-action="Index">Product</a>
 
                         </li>
                     </ul>
@@ -38,7 +39,7 @@
     </header>
     <div class="container">
         <main role="main" class="pb-3">
-            <partial name="_Notification"/>
+            <partial name="_Notification" />
             @RenderBody()
         </main>
     </div>
@@ -53,4 +54,5 @@
     <script src="~/js/site.js" asp-append-version="true"></script>
     @await RenderSectionAsync("Scripts", required: false)
 </body>
+
 </html>
