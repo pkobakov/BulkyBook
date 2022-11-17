@@ -1,6 +1,7 @@
 ﻿using BulkyBook.DataAccess.Data;
 using BulkyBook.DataAccess.Repository.IRepository;
 using BulkyBook.Models;
+using BulkyBook.Models.ViewModels;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.Rendering;
 
@@ -27,26 +28,29 @@ namespace BulkyBookWeb.Areas.Admin.Controllers
         //GET
         public IActionResult Upsert(int? id)
         {
-            Product product = new Product();
-            IEnumerable<SelectListItem> CategoryList = _unitOfWork.Category.GetAll().Select( category => new SelectListItem
+            ProductVM productVM = new ProductVM()
             {
-                Text = category.Name,
-                Value = category.Id.ToString()
-            });
+                Product = new Product(),
+                CategoryList = _unitOfWork.Category.GetAll().Select(category => new SelectListItem
+                {
+                    Text = category.Name,
+                    Value = category.Id.ToString()
+                }),
+                CoverTypeList = _unitOfWork.CoverType.GetAll().Select(coverType => new SelectListItem 
+                { 
+                    Text= coverType.Name,
+                    Value = coverType.Id.ToString()
+                })
 
-            IEnumerable<SelectListItem> CoverTypeList = _unitOfWork.CoverType.GetAll().Select(coverType => new SelectListItem
-            {
-                Text = coverType.Name,
-                Value = coverType.Id.ToString()
-            });
+            };
 
             if (id == null || id == 0)
             {
                 //create product 
-                ViewBag.CategoryList = CategoryList;
-                ViewData["CoverTypeList"] = CoverTypeList;
+                //ViewBag.CategoryList = CategoryList;
+                //ViewData["CoverTypeList"] = CoverTypeList;
 
-                return View(product);
+                return View(productVM);
             }
             else
             {
@@ -54,7 +58,7 @@ namespace BulkyBookWeb.Areas.Admin.Controllers
             }
 
 
-            return View(product);
+            return View(productVM);
         }
 
 
