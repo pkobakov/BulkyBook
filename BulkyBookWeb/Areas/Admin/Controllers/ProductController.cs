@@ -28,22 +28,23 @@ namespace BulkyBookWeb.Areas.Admin.Controllers
         public IActionResult Upsert(int? id)
         {
             Product product = new Product();
-            IEnumerable<SelectListItem> CategoryList = _unitOfWork.Category.GetAll().Select( x => new SelectListItem
+            IEnumerable<SelectListItem> CategoryList = _unitOfWork.Category.GetAll().Select( category => new SelectListItem
             {
-                Text = x.Name,
-                Value = x.Id.ToString()
+                Text = category.Name,
+                Value = category.Id.ToString()
             });
 
-            IEnumerable<SelectListItem> CoverTypeList = _unitOfWork.CoverType.GetAll().Select(x => new SelectListItem
+            IEnumerable<SelectListItem> CoverTypeList = _unitOfWork.CoverType.GetAll().Select(coverType => new SelectListItem
             {
-                Text = x.Name,
-                Value = x.Id.ToString()
+                Text = coverType.Name,
+                Value = coverType.Id.ToString()
             });
 
             if (id == null || id == 0)
             {
                 //create product 
-                ViewBag.CategoryList = CategoryList; 
+                ViewBag.CategoryList = CategoryList;
+                ViewData["CoverTypeList"] = CoverTypeList;
 
                 return View(product);
             }
