@@ -17,6 +17,10 @@
       "PackagePath": "staticwebassets\\favicon.ico"
     },
     {
+      "Id": "C:\\Users\\Petar Kobakov\\Desktop\\BulkyBook\\BulkyBookWeb\\wwwroot\\images\\products\\5475c385-1bf0-4a35-a11f-878712036ffb.jpg",
+      "PackagePath": "staticwebassets\\images\\products\\5475c385-1bf0-4a35-a11f-878712036ffb.jpg"
+    },
+    {
       "Id": "C:\\Users\\Petar Kobakov\\Desktop\\BulkyBook\\BulkyBookWeb\\wwwroot\\js\\site.js",
       "PackagePath": "staticwebassets\\js\\site.js"
     },
