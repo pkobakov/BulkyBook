@@ -82,6 +82,15 @@ namespace BulkyBookWeb.Areas.Admin.Controllers
                     var uploads = Path.Combine(wwwrootPath, @"images\products");
                     var extension = Path.GetExtension(file.FileName);
 
+                    if (obj.Product.ImageURL != null)
+                    {
+                        var oldImagePath = Path.Combine(wwwrootPath, obj.Product.ImageURL.TrimStart('\\'));
+                        if (System.IO.File.Exists(oldImagePath))
+                        {
+                            System.IO.File.Delete(oldImagePath);
+                        }
+                    }
+
                     using (var fileStreams = new FileStream(Path.Combine(uploads,fileName+extension), FileMode.Create)) 
                     { 
                       file.CopyTo(fileStreams);
@@ -89,7 +98,17 @@ namespace BulkyBookWeb.Areas.Admin.Controllers
 
                     obj.Product.ImageURL = @"\images\products\" + fileName + extension;
                 }
+
+                if (obj.Product.Id == 0)
+                {
                 _unitOfWork.Product.Add(obj.Product);
+
+                }
+                else
+                {
+                    _unitOfWork.Product.Update(obj.Product);
+                }
+                
                 _unitOfWork.Save();
                 TempData["success"] = "Product created successfully";
                 return RedirectToAction("Index");
