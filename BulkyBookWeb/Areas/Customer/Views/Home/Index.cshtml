@@ -13,7 +13,7 @@
 
                           <div class="pl-1">
                             <p class="card-tittle h5 text-primary">@product.Title</p>
-                            <p class="card-tittle text-secondary">@product.Author</p>
+                            <p class="card-tittle text-secondary">by @product.Author</p>
                           </div>
                           <div class="pl-1">
                             <p>List Price: <strike><b>$@product.ListPrice.ToString("0.00")</b></strike></p>
@@ -24,7 +24,7 @@
                           </div>
                           <div>
                               <a asp-action="Details" class="btn btn-primary form-control" asp-route-id="@product.Id">
-                                  Details
+                                  DETAILS
                               </a> 
                           </div>
                         </div>
