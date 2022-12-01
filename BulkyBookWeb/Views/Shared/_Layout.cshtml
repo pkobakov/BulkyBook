@@ -27,13 +27,15 @@
                                 <a class="nav-link" asp-area="Admin" asp-controller="Category" asp-action="Index">Gategory</a>
                                 <a class="nav-link" asp-area="Admin" asp-controller="CoverType" asp-action="Index">Cover Type</a>
                                 <a class="nav-link" asp-area="Admin" asp-controller="Product" asp-action="Index">Product</a>
-
+                                <div class="dropdown-divider"></div>
+                            </div>
                         </li>
                     </ul>
-                    <form class="d-flex">
+                    <partial name="_LoginPartial" />
+                    @*<form class="d-flex">
                         <input class="form-control me-sm-2" type="text" placeholder="Search">
                         <button class="btn btn-secondary my-2 my-sm-0" type="submit">Search</button>
-                    </form>
+                    </form>*@
                 </div>
             </div>
         </nav>
