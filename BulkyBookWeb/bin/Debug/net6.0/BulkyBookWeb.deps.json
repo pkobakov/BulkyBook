@@ -3232,6 +3232,7 @@
       },
       "BulkyBook.Models/1.0.0": {
         "dependencies": {
+          "Microsoft.AspNetCore.Identity.EntityFrameworkCore": "6.0.10",
           "Microsoft.AspNetCore.Mvc": "2.2.0"
         },
         "runtime": {
