@@ -42,25 +42,25 @@ namespace BulkyBookWeb.Areas.Customer.Controllers
         [HttpPost]
         [ValidateAntiForgeryToken]
         [Authorize]
-        public IActionResult Details(ShoppingCart sc)
+        public IActionResult Details(ShoppingCart shoppingCart)
         {
 
             var claimsIdentity = (ClaimsIdentity)User.Identity;
             var claim = claimsIdentity.FindFirst(ClaimTypes.NameIdentifier);
-            sc.ApplicationUserId = claim.Value;
+            shoppingCart.ApplicationUserId = claim.Value;
 
             ShoppingCart cartFromDb = _unitOfWork.ShoppingCart.GetFirstOrDefault(
-                u => u.ApplicationUserId == claim.Value && u.ProductId == sc.ProductId
+                u => u.ApplicationUserId == claim.Value && u.ProductId == shoppingCart.ProductId
                 );
 
             if (cartFromDb == null) 
             {
-                _unitOfWork.ShoppingCart.Add(cartFromDb);
+                _unitOfWork.ShoppingCart.Add(shoppingCart);
             }
 
             else
             {
-                _unitOfWork.ShoppingCart.IncrementCount(cartFromDb, sc.Count);
+                _unitOfWork.ShoppingCart.IncrementCount(cartFromDb, shoppingCart.Count);
             }
 
             _unitOfWork.Save();
