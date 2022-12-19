@@ -1,5 +1,4 @@
 ﻿using BulkyBook.Models;
-using BulkyBook.Models.ViewModels;
 using Microsoft.AspNetCore.Identity.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore;
 
