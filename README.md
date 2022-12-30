@@ -1,5 +1,5 @@
 # BulkyBook
-Simple eshop for book trading based on ASP.Net Core 6. With this project I'm trying to show my current skills knowledge of ASP.Net Core 6
+Simple e-shop project for book trading based on ASP.Net Core 6. Just trying to show my current skills knowledge of ASP.Net Core 6
  Framework, Bootstrap, Toastr Library and Stripe Payments Platform.
  
  The Progect contains:
