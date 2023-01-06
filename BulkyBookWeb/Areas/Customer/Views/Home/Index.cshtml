@@ -16,11 +16,11 @@
                             <p class="card-tittle text-secondary">by @product.Author</p>
                           </div>
                           <div class="pl-1">
-                            <p>List Price: <strike><b>$@product.ListPrice.ToString("0.00")</b></strike></p>
+                            <p>List Price: <strike><b>@product.ListPrice.ToString("c")</b></strike></p>
                             <p></p>
                           </div>
                           <div class="pl-1">
-                            <p>As low as: <b>$@product.Price100.ToString("0.00")</b></p>
+                            <p>As low as: <b>@product.Price100.ToString("c")</b></p>
                           </div>
                           <div>
                               <a asp-action="Details" class="btn btn-primary form-control" asp-route-productId="@product.Id">
