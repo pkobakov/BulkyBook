@@ -42,7 +42,7 @@
           "Microsoft.EntityFrameworkCore.SqlServer": "6.0.10",
           "Microsoft.EntityFrameworkCore.Tools": "6.0.10",
           "Microsoft.VisualStudio.Web.CodeGeneration.Design": "6.0.11",
-          "Stripe.net": "41.2.0",
+          "Stripe.net": "41.4.0",
           "Microsoft.AspNetCore.Antiforgery.Reference": "6.0.0.0",
           "Microsoft.AspNetCore.Authentication.Abstractions.Reference": "6.0.0.0",
           "Microsoft.AspNetCore.Authentication.Cookies": "6.0.0.0",
@@ -2392,15 +2392,15 @@
       "runtime.ubuntu.14.04-x64.runtime.native.System.Security.Cryptography.OpenSsl/4.3.0": {},
       "runtime.ubuntu.16.04-x64.runtime.native.System.Security.Cryptography.OpenSsl/4.3.0": {},
       "runtime.ubuntu.16.10-x64.runtime.native.System.Security.Cryptography.OpenSsl/4.3.0": {},
-      "Stripe.net/41.2.0": {
+      "Stripe.net/41.4.0": {
         "dependencies": {
           "Newtonsoft.Json": "13.0.1",
           "System.Configuration.ConfigurationManager": "6.0.0"
         },
         "runtime": {
           "lib/net6.0/Stripe.net.dll": {
-            "assemblyVersion": "41.2.0.0",
-            "fileVersion": "41.2.0.0"
+            "assemblyVersion": "41.4.0.0",
+            "fileVersion": "41.4.0.0"
           }
         },
         "compile": {
@@ -6069,12 +6069,12 @@
       "path": "runtime.ubuntu.16.10-x64.runtime.native.system.security.cryptography.openssl/4.3.0",
       "hashPath": "runtime.ubuntu.16.10-x64.runtime.native.system.security.cryptography.openssl.4.3.0.nupkg.sha512"
     },
-    "Stripe.net/41.2.0": {
+    "Stripe.net/41.4.0": {
       "type": "package",
       "serviceable": true,
-      "sha512": "sha512-cj0tHKNsah+w9stRqfwzYd0ewfoc9jc+dDubHjHin5YGPBcdloq8A4e9k09bzijAaqjsHQ2W356Y3OobGJ2KSg==",
-      "path": "stripe.net/41.2.0",
-      "hashPath": "stripe.net.41.2.0.nupkg.sha512"
+      "sha512": "sha512-ZTAorvWKMYLHU7zvxokD8ddwTAHbdeQCyaBQc7uKCtzSHsW+OGzdMehUX+5mU5JgE9AEcheRck4S6j+H4j2HFw==",
+      "path": "stripe.net/41.4.0",
+      "hashPath": "stripe.net.41.4.0.nupkg.sha512"
     },
     "System.AppContext/4.3.0": {
       "type": "package",

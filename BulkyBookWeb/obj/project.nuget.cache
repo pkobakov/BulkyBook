@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "iJ7DuQPx9gI9TRgmBoPZlr39U8oYZKzyUHVJhlxVTgFPefKzhZXlRf8XQeNQgX7TroZFpapsHv8amP7QXWpK/Q==",
+  "dgSpecHash": "9zdbwK54kXdCpgEgkGwJvUCBI4Lfq+TLC42tDXgRWg5iWm7pC/3xWtp1c22zcpBQZlwlHhU1VPrjjAo5NGCKbQ==",
   "success": true,
   "projectFilePath": "C:\\Users\\Petar Kobakov\\Desktop\\BulkyBook\\BulkyBookWeb\\BulkyBookWeb.csproj",
   "expectedPackageFiles": [
@@ -153,7 +153,7 @@
     "C:\\Users\\Petar Kobakov\\.nuget\\packages\\runtime.ubuntu.14.04-x64.runtime.native.system.security.cryptography.openssl\\4.3.0\\runtime.ubuntu.14.04-x64.runtime.native.system.security.cryptography.openssl.4.3.0.nupkg.sha512",
     "C:\\Users\\Petar Kobakov\\.nuget\\packages\\runtime.ubuntu.16.04-x64.runtime.native.system.security.cryptography.openssl\\4.3.0\\runtime.ubuntu.16.04-x64.runtime.native.system.security.cryptography.openssl.4.3.0.nupkg.sha512",
     "C:\\Users\\Petar Kobakov\\.nuget\\packages\\runtime.ubuntu.16.10-x64.runtime.native.system.security.cryptography.openssl\\4.3.0\\runtime.ubuntu.16.10-x64.runtime.native.system.security.cryptography.openssl.4.3.0.nupkg.sha512",
-    "C:\\Users\\Petar Kobakov\\.nuget\\packages\\stripe.net\\41.2.0\\stripe.net.41.2.0.nupkg.sha512",
+    "C:\\Users\\Petar Kobakov\\.nuget\\packages\\stripe.net\\41.4.0\\stripe.net.41.4.0.nupkg.sha512",
     "C:\\Users\\Petar Kobakov\\.nuget\\packages\\system.appcontext\\4.3.0\\system.appcontext.4.3.0.nupkg.sha512",
     "C:\\Users\\Petar Kobakov\\.nuget\\packages\\system.buffers\\4.5.1\\system.buffers.4.5.1.nupkg.sha512",
     "C:\\Users\\Petar Kobakov\\.nuget\\packages\\system.collections\\4.3.0\\system.collections.4.3.0.nupkg.sha512",
