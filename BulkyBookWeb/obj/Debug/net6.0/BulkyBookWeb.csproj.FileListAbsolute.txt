@@ -963,3 +963,4 @@ C:\Users\Petar Kobakov\Desktop\BulkyBook\BulkyBookWeb\bin\Debug\net6.0\System.Re
 C:\Users\Petar Kobakov\Desktop\BulkyBook\BulkyBookWeb\bin\Debug\net6.0\MailKit.dll
 C:\Users\Petar Kobakov\Desktop\BulkyBook\BulkyBookWeb\bin\Debug\net6.0\MimeKit.dll
 C:\Users\Petar Kobakov\Desktop\BulkyBook\BulkyBookWeb\bin\Debug\net6.0\BouncyCastle.Crypto.dll
+C:\Users\Petar Kobakov\Desktop\BulkyBook\BulkyBookWeb\bin\Debug\net6.0\Microsoft.AspNetCore.Authentication.Facebook.dll

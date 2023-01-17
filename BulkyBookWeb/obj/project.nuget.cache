@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "qu0s1IY8NdqZ9egI8b1HCFh2SCnAUwRX47noYBg/zz+3ctSrbzqjr5BumDc2y11HAjnWpNoxHrqRTpudzLEU7A==",
+  "dgSpecHash": "LR9pyfbxRsEZ5Ed5GIvoLleVosKtQsSJ3kxsAv9VRiNuToSruMWKJ4n0xIvY0lr9dj2TLRQbdLRZydjTF2DN9w==",
   "success": true,
   "projectFilePath": "C:\\Users\\Petar Kobakov\\Desktop\\BulkyBook\\BulkyBookWeb\\BulkyBookWeb.csproj",
   "expectedPackageFiles": [
@@ -12,6 +12,7 @@
     "C:\\Users\\Petar Kobakov\\.nuget\\packages\\microsoft.aspnetcore.antiforgery\\2.2.0\\microsoft.aspnetcore.antiforgery.2.2.0.nupkg.sha512",
     "C:\\Users\\Petar Kobakov\\.nuget\\packages\\microsoft.aspnetcore.authentication.abstractions\\2.2.0\\microsoft.aspnetcore.authentication.abstractions.2.2.0.nupkg.sha512",
     "C:\\Users\\Petar Kobakov\\.nuget\\packages\\microsoft.aspnetcore.authentication.core\\2.2.0\\microsoft.aspnetcore.authentication.core.2.2.0.nupkg.sha512",
+    "C:\\Users\\Petar Kobakov\\.nuget\\packages\\microsoft.aspnetcore.authentication.facebook\\6.0.10\\microsoft.aspnetcore.authentication.facebook.6.0.10.nupkg.sha512",
     "C:\\Users\\Petar Kobakov\\.nuget\\packages\\microsoft.aspnetcore.authorization\\2.2.0\\microsoft.aspnetcore.authorization.2.2.0.nupkg.sha512",
     "C:\\Users\\Petar Kobakov\\.nuget\\packages\\microsoft.aspnetcore.authorization.policy\\2.2.0\\microsoft.aspnetcore.authorization.policy.2.2.0.nupkg.sha512",
     "C:\\Users\\Petar Kobakov\\.nuget\\packages\\microsoft.aspnetcore.cors\\2.2.0\\microsoft.aspnetcore.cors.2.2.0.nupkg.sha512",
